@@ -1,0 +1,47 @@
+#sidebar-main-content {
+
+ margin-top:rem-calc(50);
+ @include make-row();
+
+  .box {
+   background:none;
+   padding-top:1.5rem;
+  }
+
+  .widget {
+   @include make-col-ready();
+   @include make-col(6);
+
+   @include media-breakpoint-up(md) {
+    @include make-col(4);
+   }
+
+   h4 {
+    font-weight:600;
+    font-size:rem-calc(16);
+   }
+  }
+
+  i.fa {
+   display:block;
+   text-align:center;
+   font-size:rem-calc(40);
+   margin-bottom:rem-calc(20);
+  }
+
+  //Default
+  .widget i:before {
+   content:"\f0c2";
+  }
+
+  //Tweets
+  .widget.widget_tp_widget_recent_tweets i:before {
+   content:"\f099";
+  }
+
+  //Share
+  .widget.Shariff i:before {
+   content:"\f1e0";
+  }
+
+}

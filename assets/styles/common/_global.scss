@@ -1,0 +1,42 @@
+// Equal Heights
+
+@media (min-width: 992px) {
+  .row-eq-height {
+    /* Equal heights for description and download area*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+// Thumbnails
+.thumbnail {
+ padding: 0;
+ border:none;
+ -webkit-transition: all .2s ease-in-out;
+ transition: all .2s ease-in-out;
+ display: inline-block;
+ max-width: 100%;
+ height: auto;
+ display: block;
+ margin-bottom: 20px;
+
+ img {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: rem-calc(5);
+  padding: 4px;
+  max-width:100%;
+ }
+}
+
+
+.hover {
+ transition:all .5s;
+
+ &:hover {
+  box-shadow:0 0 rem-calc(10) 0 rgba($gray-lighter,.9);
+ }
+
+}

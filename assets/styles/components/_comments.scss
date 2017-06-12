@@ -1,0 +1,81 @@
+#comments {
+ border-top:.25rem solid $gray-lighter;
+ margin-top:rem-calc(60);
+ padding-top:rem-calc(40);
+}
+
+.comment-list {
+  @extend .list-unstyled;
+  margin-bottom:rem-calc(40);
+
+  li {
+   border:rem-calc(1) solid $gray-lighter;
+   border-radius:rem-calc(10);
+   overflow:hidden;
+   margin-bottom:rem-calc(30);
+  }
+
+  .comment-meta {
+   display:block;
+   min-height:rem-calc(52);
+   background:$gray-lightest;
+   border-bottom:rem-calc(1) solid $gray-lighter;
+   padding:rem-calc(10) rem-calc(20);
+  }
+
+  .comment-author {
+   float:left;
+   padding-top:rem-calc(2);
+
+   img {
+    margin-top:rem-calc(-3);
+   }
+  }
+
+  .comment-metadata {
+   float:right;
+   margin-top:rem-calc(4);
+  }
+
+  .comment-content {
+   clear:both;
+   margin-top:rem-calc(20);
+   padding:0 rem-calc(20);
+  }
+
+  .reply {
+   padding:0 rem-calc(20);
+   margin-bottom:rem-calc(20);
+
+   a {
+    @extend .btn,.btn-secondary, .btn-small;
+   }
+  }
+}
+
+.comment-list ol {
+  list-style: none;
+}
+
+.comment-form  {
+ @extend .box;
+}
+
+.comment-form p {
+  @extend .form-group;
+
+  &.form-submit {
+   margin:0;
+  }
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+  @extend .form-control;
+}
+.comment-form input[type="submit"] {
+  @extend .btn;
+  @extend .btn-primary;
+}

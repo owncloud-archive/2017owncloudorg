@@ -1,0 +1,71 @@
+/* Bright colors on dark backgrounds */
+.dark {
+
+ h1,h2,h3,h4,h5,h6,
+ a,p,ul,li {
+  color:$gray-lighter;
+ }
+
+}
+
+strong {
+ font-weight:700;
+}
+
+span.medium {
+ font-weight:600;
+}
+
+
+/* Headlines */
+
+h1 {
+ margin-bottom:2rem;
+}
+
+h2 {
+ font-weight:400;
+ margin-bottom:1.75rem;
+}
+
+h1,h2,h3,h4,h5 {
+
+ small {
+  color:$gray-light;
+ }
+
+}
+
+/* Lines */
+
+hr {
+
+ &.narrow {
+  margin-bottom:rem-calc(-25)
+ }
+
+}
+
+/* Helper Classes */
+
+.avoidwrap {
+ display:inline-block;
+}
+
+.numbadge {
+ background:$white;
+ border:rem-calc(1) solid $gray-lighter;
+ width:rem-calc(50);
+ height:rem-calc(50);
+ font-size:rem-calc(20);
+ font-weight:600;
+ line-height:rem-calc(50);
+ margin:0 auto;
+ color:$brand-primary;
+ margin-bottom:rem-calc(20);
+ margin-top:rem-calc(-65);
+
+ @extend .align-middle;
+ @extend .text-center;
+ @extend .rounded-circle;
+}

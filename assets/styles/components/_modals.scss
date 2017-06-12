@@ -1,0 +1,36 @@
+// Typo
+
+.modal {
+
+ h1 {
+   font-size: 23px;
+   margin-top: 0;
+ }
+
+ h3 {
+   font-size: 17px;
+   font-weight: normal;
+   margin: 8px 0;
+ }
+
+ h4 {
+   font-size: 12px;
+   margin-top: 0;
+ }
+
+ @media (max-width: 991px) {
+   li,
+   p {
+     font-size: 12px;
+   }
+
+   .archive-types {
+     font-size: 11px;
+   }
+
+   h3 {
+     font-size: 14px;
+   }
+ }
+
+}
