@@ -69,3 +69,9 @@ hr {
  @extend .text-center;
  @extend .rounded-circle;
 }
+
+.textbadge {
+ @extend .numbadge;
+ width:inherit;
+ border-radius:rem-calc(25);
+}
