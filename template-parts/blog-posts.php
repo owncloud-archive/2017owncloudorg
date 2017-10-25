@@ -3,11 +3,27 @@
  $temp = $wp_query;
  $wp_query= null;
 
- $args = array(
-	'posts_per_page'    => 5,
-	'paged' => $paged
-);
+ // Get all blog posts or exclude the category Planet ownCloud
+ //
+ if(get_field('planet_owncloud')) {
 
+   $args = array(
+   'posts_per_page'    => 5,
+   'paged' => $paged
+  );
+
+} else {
+
+  $args = array(
+   'posts_per_page'    => 5,
+   'paged' => $paged,
+   'category__not_in' => array(25)
+ );
+
+}
+
+// Set the query
+//
  $wp_query = new WP_Query($args);
 
  if ($wp_query->have_posts()): ?>
