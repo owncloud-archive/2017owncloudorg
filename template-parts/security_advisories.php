@@ -2,8 +2,8 @@
 
 // Get the affected platform
  $advisory_platforms = get_terms('platform', array(
-   'order'      => 'DESC',
-   'orderby'    => 'count',
+   'order'      => 'ASC',
+   'orderby'    => 'order',
  ));
 
  if ($advisory_platforms): ?>
@@ -26,6 +26,7 @@
 
           // Get the affected versions
           $advisory_versions = get_terms('version', array(
+            'orderby'    => 'order',
             'order'      => 'ASC',
           ));
 
