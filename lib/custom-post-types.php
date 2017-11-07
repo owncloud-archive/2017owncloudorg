@@ -124,7 +124,7 @@ function cpt_advisories() {
     'show_in_nav_menus'   => true,
     'publicly_queryable'  => true,
     'query_var'           => false,
-    'supports'      => array( 'title', 'editor', 'platform' ),
+    'supports'      => array( 'title', 'editor', 'platform','author' ),
     'has_archive'   => true
   );
   register_post_type( 'advisories', $args );
