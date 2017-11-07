@@ -69,7 +69,7 @@
          <?php endif; ?>
        <?php endforeach; ?>
 
-       <a class="btn btn-primary btn-small" href="https://owncloud-org-relaunch:8890/feed/?post_type=advisories&platform=<?php echo $advisory_platform->slug  ?>" target="_blank">Follow <?php echo $advisory_platform->name; ?> advisories via RSS</a>
+       <a class="btn btn-primary btn-small" href="//feed/?post_type=advisories&platform=<?php echo $advisory_platform->slug  ?>" target="_blank">Follow <?php echo $advisory_platform->name; ?> advisories via RSS</a>
 
    </div>
 
