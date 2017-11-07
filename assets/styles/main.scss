@@ -23,6 +23,8 @@
 @import "components/widget-areas";
 @import "components/tweets";
 @import "components/faq";
+@import "components/provider";
+@import "components/security_advisories";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
@@ -31,6 +33,5 @@
 @import "layouts/single";
 @import "layouts/home";
 @import "layouts/download";
-@import "layouts/provider";
 @import "layouts/history";
 @import "layouts/tinymce";

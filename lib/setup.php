@@ -103,6 +103,7 @@ function display_sidebar() {
     is_front_page(),
     is_single(),
     is_page_template('page-templates/full-width.php'),
+    is_page_template('page-templates/security_advisories.php'),
     is_page_template('page-templates/full-width-scroll.php'),
   ]);
 

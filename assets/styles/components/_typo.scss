@@ -36,6 +36,8 @@ h1,h2,h3,h4,h5 {
 
 }
 
+
+
 /* Lines */
 
 hr {
@@ -74,4 +76,14 @@ hr {
  @extend .numbadge;
  width:inherit;
  border-radius:rem-calc(25);
+}
+
+.tag {
+  background:$white;
+  border-radius:rem-calc(25);
+  border: rem-calc(1) solid rgba($gray-light,.6);
+  color:$gray;
+  padding:rem-calc(10) rem-calc(15);
+  display: inline-block;
+  font-weight:600;
 }

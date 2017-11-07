@@ -12,7 +12,15 @@
   <div class="author-avatar-small hidden-md-up">
     <?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
   </div>
-  <p class="byline author vcard"><?= __('By', 'sage'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+
+
+
+
+  <p class="byline author vcard"><?= __('By', 'sage'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a><br />
+
+  <?php get_template_part('template-parts/advisory-tags'); ?>
+
+  </p>
    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
  </header>
 
