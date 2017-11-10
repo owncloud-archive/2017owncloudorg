@@ -73,7 +73,7 @@
 
  }
 
- #menu-top-navigation {
+ .navbar-nav.mr-auto {
   @include media-breakpoint-up(lg) {
    position:absolute;
    right:0;
